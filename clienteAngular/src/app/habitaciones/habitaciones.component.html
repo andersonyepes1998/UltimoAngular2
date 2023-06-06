@@ -1,0 +1,22 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col-8">
+            <h3>HABITACIONES DISPONIBLES</h3>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint sed, delectus atque dicta voluptatum veritatis debitis quas. Perspiciatis adipisci doloribus voluptate voluptatum, sed nesciunt dolorem aperiam reprehenderit quos atque eligendi!</p>
+
+            <img src="../../assets/Decameron.webp" alt="" class="img-fluid w-100">
+
+        </div>
+        <div class="col-4"></div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-3 my-5">
+        <div class="col" *ngFor="let habitacion of habitaciones">
+            <div class="card h-100 shadow">
+                <h1>{{habitacion.nombre}}</h1>
+                <img src={{habitacion.foto}} alt="foto" class="img-fluid w-100">
+                <h4>$COP {{habitacion.precio}}</h4>
+            </div>
+        </div>
+    </div>
+</div>
